@@ -38,13 +38,13 @@ def divide(x,y):
         return x / y
 
 
-
 def input():
-    i = input("Veuillez saisir un caractère")
 
 
 def mini_jeu():
+    i = input()
     x = 0
-    while i != g:
+    while i != "g":
         x = x + 1
+
     return "Valeur trouvé en " +x+ "essai(s)"

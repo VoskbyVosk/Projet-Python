@@ -37,14 +37,3 @@ def divide(x,y):
     else:
         return x / y
 
-
-def input():
-
-
-def mini_jeu():
-    i = input()
-    x = 0
-    while i != "g":
-        x = x + 1
-
-    return "Valeur trouvé en " +x+ "essai(s)"

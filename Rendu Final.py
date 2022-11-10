@@ -22,3 +22,4 @@
       #Afficher Gagné
   #Sinon
     #Afficher erreur lors du choix d'options
+  #Retourner la fonction

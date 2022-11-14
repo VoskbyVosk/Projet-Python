@@ -42,11 +42,11 @@ def play():
         
 def rejouer():
     choix2 = input('Voulez vous rejouer ? (Y/N)')
-    if(choix2 == 'Y'):
+    if(choix2 == 'O'):
         play()
-    if(choix2 == 'y'):
+    if(choix2 == 'o'):
         play()
-    if(choix2 == 'yes'):
+    if(choix2 == 'oui'):
         play()
     else:
         exit

@@ -1,0 +1,119 @@
+#DEBUT
+
+#On créer le plateau de jeu de 3x3
+
+#On affiche le plateau vide
+
+#Définition de la fonction morpion
+    #Si c'est le tour du joueur 1 (ici le joueur physique)
+        #Demander la case que le joueur veut changer et prendre sa valeur dans la variable "choix"
+        #Conditions pour faire correspondre l'entrée du joueur avec la case correspondante, uniquement si elle est vide
+        #Ligne 1
+
+        #Ligne 2
+
+        #Ligne 3
+
+        #Sinon afficher le message d'erreur et renvoyer le joueur au choix de la case
+        #Afficher le tableau après que le joueur ait joué
+        #Appeler la fonction "checkIfWin" pour le joueur 1 qui vérifiera si ce joueur a gagné la partie ou non
+
+    #Quand c'est le tour du Joueur 2
+        #Si le tour est le premier, vérifier si le joueur a joué soit au milieu soit autre part, et placer la croix en fonction du choix du joueur
+        #Sinon si le tour est le troisième, vérifier que les mouvements seulement réalisables au tour 3 et non pris en compte par la fonction "verifbot" soient existant et les contrer
+        #Sinon, appeler la fonction "verifbot"
+            #Coin haut gauche
+
+            #Coin haut droite
+
+            #Coin bas gauche
+
+            #Coin bas droite
+
+        #Sinon si le tour est le cinquiè^me appeler la fonction "verifbot"
+        #Sinon si le tour est le septième, appeler la fonction "verifbot qui saura contrer n'importe quel mouvement du septième tour"
+        #Afficher le tableau après que le bot ait joué
+        #Appeler la fonction "checkIfWin" pour le joueur 2 qui vérifiera si ce joueur a gagné la partie ou non (ici le bot)
+
+
+    #Sinon si ce n'est pas le tour d'un joueur et donc que quelqu'un a gagné la partie ou qu'il y a égalité
+        #Alors demander au joueur si il veut recommencer et implémenter son choix dans la variable "re"
+        #Tant que le choix du joueur "re" est différent de "oui"
+            #Si la réponse du joueur est "non"
+                #Alors afficher un message d'au revoir et terminer le code (return ne fonctionne pas pour dieu ne sait quelle raison)
+            #Sinon
+                #Alors afficher un message d'erreur et redemander le choix du joueur
+        #Sinon
+                #Afficher un message de bonne chance
+                #Réinitialiser le tableau du morpion
+                #Afficher le tableau vide avec toute les coordonées correspondantes aux cases
+                #Réinitialiser le nombre de tours
+                #Appeler la fonction "morpion" avec comme paramètre le joueur dont c'est le tour
+
+#Créer une fonction "verifbot" qui permettra de vérifier si il y a 2 croix dans la même ligne, colonne ou diagonale et de compléter avec une troisième croix
+#Et si il n'y a aucune croix à compléter, alors vérifier si il y a 2 cercles dans la même ligne, colonne ou diagonale et compléter la troisième case avec une croix
+
+    #Verifier si il y a deux croix côte à côte, si oui et que la troisième case est vide, alors placer une croix
+    #Ligne 1
+
+    #Ligne 2
+
+    #Ligne 3
+
+    #Colonne 1
+
+    #Colonne 2
+
+    #Colonne 3
+
+    #Diagonale 1
+
+    #Diagonale 2
+
+    #Verifier si il y a deux cercles côte à côte, si oui et que la troisième case est vide, alors placer une croix
+    #Ligne 1
+
+    #Ligne 2
+
+    #Ligne 3
+
+    #Colonne 1
+
+    #Colonne 2
+
+    #Colonne 3
+
+    #Diagonale
+
+    #Diagonale 2
+
+    #Sinon
+        #Si aucune des conditions au dessus sont valides, vérifier ces conditions-ci qui sont des cas plus spécifiques
+
+#Créer une fonction "checkIfWin" qui vérifier si un joueur a gagné ou pas à chaque tour
+    #Si c'est le tour du joueur 1
+        #Si une des trois lignes comprant 3 cercles
+        #Alors le joueur 1 gagne et on renvoie la fonction morpion avec la fin de match comme condition après afficher que le joueur a gagné
+        #Si une des trois colonnes comprant 3 cercles
+        #Alors le joueur 1 gagne et on renvoie la fonction morpion avec la fin de match comme condition après afficher que le joueur a gagné
+        #Si une des deux diagonales comprant 3 cercles
+        #Alors le joueur 1 gagne et on renvoie la fonction morpion avec la fin de match comme condition après afficher que le joueur a gagné
+        #Si le tour est le neuvième et donc après avoir vérifier si le joueur a gagné
+            #Alors afficher l'égalité et renvoyer la fonction morpion avec la fin de match comme condition
+        #Sinon
+            #Alors renvoyer la fonction morpion avec le joueur dont c'est le tour
+
+    #Si c'est le tour du joueur 2 (ici le bot)
+        #Si une des trois lignes comprant 3 croix
+        #Alors le joueur 2 gagne et on renvoie la fonction morpion avec la fin de match comme condition après afficher que le joueur a gagné
+        #Si une des trois colonnes comprant 3 croix
+        #Alors le joueur 2 gagne et on renvoie la fonction morpion avec la fin de match comme condition après afficher que le joueur a gagné
+        #Si une des deux diagonales comprant 3 croix
+        #Alors le joueur 2 gagne et on renvoie la fonction morpion avec la fin de match comme condition après afficher que le joueur a gagné
+        #Si le tour est le neuvième et donc après avoir vérifier si le joueur a gagné
+            #Alors afficher l'égalité et renvoyer la fonction morpion avec la fin de match comme condition
+        #Sinon
+            #Alors renvoyer la fonction morpion avec le joueur dont c'est le tour
+
+#Appeler la fonction morpion au tour 0 avec le joueur qui commence
+#FIN
